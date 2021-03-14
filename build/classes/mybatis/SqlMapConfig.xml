@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <settings>
+		<setting name="logImpl" value="STDOUT_LOGGING"/>
+		<!-- 启动二级缓存 -->
+		<setting name="cacheEnabled" value="true"/>
+		<!-- 将积极加载改为消极加载即按需要加载 -->
+		<setting name="aggressiveLazyLoading" value="false"/>
+	</settings>
+	
+	<typeAliases>
+		<package name="com.shop.pojo"/>
+	</typeAliases>
+	<!-- 分页插件: 拦截器 -->
+    <plugins>
+    	<plugin interceptor="com.github.pagehelper.PageHelper">
+    		<!-- 指定数据库的方言（类型）必须  -->
+    		<property name="dialect" value="mysql"/>
+    		<property name="reasonable" value="true"/>
+    	</plugin>
+    </plugins>
+
+	
+</configuration>

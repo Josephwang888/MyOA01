@@ -1,0 +1,5 @@
+
+<a href="#" class="btn btn-success btn-xs"><span class="glyphicon glyphicon-plus"></span> 添加子分类</a>
+<a href="#" class="btn btn-info btn-xs"><span class="glyphicon glyphicon-edit"></span> 编辑</a>
+<a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span> 删除</a>
+<a href="#" class="btn btn-success btn-xs"><span class="glyphicon glyphicon-eye-open"></span> 查看</a>
